@@ -7,7 +7,7 @@ const axios = require('./axios')
 const baseUrl = "https://api.tf2sc.cn"
 
 
-// 登录
+// 获取列表
 export function getList(obj) {
 	return axios({
 		

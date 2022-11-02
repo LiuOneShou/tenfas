@@ -1,13 +1,41 @@
 {
-  "pages":[
-    "pages/index/index"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/second/second",
+        "pages/sellcar/sellcar"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "./static/icons/shouye1.png",
+                "selectedIconPath": "./static/icons/shouye.png"
+            },
+            {
+                "text": "歌手",
+                "pagePath": "pages/second/second",
+                "iconPath": "./static/icons/31liebiao1.png",
+                "selectedIconPath": "./static/icons/31liebiao.png"
+            },
+            {
+                "text": "个人中心页",
+                "pagePath": "pages/sellcar/sellcar",
+                "iconPath": "./static/icons/gerenzhongxin1.png",
+                "selectedIconPath": "./static/icons/gerenzhongxin.png"
+            }
+        ],
+        "position": "bottom",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "color": "#333",
+        "selectedColor": "#01cd74"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
