@@ -1,0 +1,22 @@
+.box {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.hot {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 25rpx;
+}
+
+.hotname {
+	font-size: 35rpx;
+	font-weight: 600;
+}
+
+.more {
+	font-size: 25rpx;
+	color: rgb(144, 150, 144);
+}

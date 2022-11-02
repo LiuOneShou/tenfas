@@ -1,0 +1,10 @@
+/* pages/details/details.wxss */
+.swiperitem{
+	width: 100%;
+	height: 300rpx;
+}
+.carouselimg{
+	width: 100%;
+	height: 300rpx;
+
+}

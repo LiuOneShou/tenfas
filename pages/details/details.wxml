@@ -1,0 +1,6 @@
+<!--pages/details/details.wxml-->
+<swiper class="swiperitem" indicator-dots autoplay circular indicator-active-color="#ffffff">
+	<swiper-item  wx:for="{{particulars.photoVo.carousel}}" wx:key="item">
+		<image class="carouselimg" src="{{item}}"></image>
+	</swiper-item>
+</swiper>

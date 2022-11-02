@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/second/second",
-        "pages/sellcar/sellcar"
+        "pages/sellcar/sellcar",
+        "pages/details/details"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -18,13 +19,13 @@
                 "selectedIconPath": "./static/icons/shouye.png"
             },
             {
-                "text": "歌手",
+                "text": "二手车",
                 "pagePath": "pages/second/second",
                 "iconPath": "./static/icons/31liebiao1.png",
                 "selectedIconPath": "./static/icons/31liebiao.png"
             },
             {
-                "text": "个人中心页",
+                "text": "卖车",
                 "pagePath": "pages/sellcar/sellcar",
                 "iconPath": "./static/icons/gerenzhongxin1.png",
                 "selectedIconPath": "./static/icons/gerenzhongxin.png"

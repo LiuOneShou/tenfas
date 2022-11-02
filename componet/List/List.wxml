@@ -1,0 +1,15 @@
+<!--componet/List/List.wxml-->
+<view class="contentbox">
+	<view class="content" data-id="{{item.ind}}" bindtap="details" wx:for="{{content}}" wx:key="index">
+		<image src="{{item.cover}}"></image>
+		<view class="deploybox">
+			<view class="carname">{{item.carName}}</view>
+			<view class="deploy">
+				<view class="time">{{item.dateOfRegistration}}</view>
+				<view class="gang"> / </view>
+				<view class="kilometre">{{item.mileage}}万公里</view>
+			</view>
+			<view class="price">{{item.currentPrice}}万</view>
+		</view>
+	</view>
+</view>

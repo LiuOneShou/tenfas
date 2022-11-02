@@ -1,1 +1,8 @@
-<view>666</view>
+<view class="box">
+	<view class="hot">
+		<view class="hotname">本地热销车型</view>
+		<view class="more">查看更多</view>
+	</view>
+	<!-- 列表组件 -->
+	<List content="{{content}}"></List>
+</view>

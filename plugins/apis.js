@@ -4,14 +4,20 @@
 const axios = require('./axios')
 
 
-const baseUrl = "https://api.tf2sc.cn"
+const baseUrl = "https://api.tf2sc.cn/api/tfcar/car"
 
 
 // 获取列表
 export function getList(obj) {
 	return axios({
-		
-		url: baseUrl + "/api/tfcar/car/list?",
+		url: baseUrl + "/list?",
+		...obj
+	})
+}
+// 获取详情
+export function getParticulars(obj) {
+	return axios({
+		url: baseUrl + "/basicInfo/" + obj,
 		...obj
 	})
 }
