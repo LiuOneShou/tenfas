@@ -10,8 +10,8 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/details/details",
-                    "query": "id=202109260928465929",
+                    "pathName": "pages/sellcar/sellcar",
+                    "query": "",
                     "launchMode": "default",
                     "scene": null
                 }

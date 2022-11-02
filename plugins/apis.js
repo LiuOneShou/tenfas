@@ -21,3 +21,11 @@ export function getParticulars(obj) {
 		...obj
 	})
 }
+// 卖车
+export function getsell(obj) {
+	return axios({
+		url: baseUrl + "/estimate",
+		method: "POST",
+		...obj
+	})
+}

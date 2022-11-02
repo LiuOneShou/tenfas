@@ -1,2 +1,31 @@
 <!--pages/sellcar/sellcar.wxml-->
-<text>pages/sellcar/sellcar.wxml</text>
+<view class="sellCar_top">
+	<image src="https://m.tf2sc.cn/assets/img/zaixianpinggu.ae0881fd.png"></image>
+</view>
+<view class="sellCar_topField">
+	<form catchsubmit="formSubmit">
+		<view class="van_field">
+			<view class="category">姓名</view>
+			<input type="text" name="name" placeholder="请输入姓名(必填)" />
+		</view>
+		<view class="van_field">
+			<view class="category">手机号</view>
+			<input type="phone" name="cellphone" placeholder="请输入手机号(必填)" />
+		</view>
+		<view class="van_field">
+			<view class="category">评估车型</view>
+			<input type="text" name="model" placeholder="请输入车型" />
+		</view>
+		<view class="van_field">
+			<view class="category">公里数</view>
+			<input type="text" name="mileage" placeholder="请输入公里数" />
+		</view>
+		<view class="van_field">
+			<view class="category">上牌时间</view>
+			<picker name="dateOfRegistration" mode="date" fields="month" value="{{date}}" start="2000-01-01" end="2040-01-01" bindchange="bindDateChange">
+				{{date}}
+			</picker>
+		</view>
+		<button class="btn" formType="submit">立即估值</button>
+	</form>
+</view>
