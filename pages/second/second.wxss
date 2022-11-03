@@ -1,1 +1,66 @@
-/* pages/second/second.wxss */
+.classify{
+	margin:30rpx 0;
+}
+.classify-box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+.clincd_er{
+	position: absolute;
+	top:0;
+}
+.clincd_txt{
+	margin:10rpx;
+}
+.brand_c{
+	display: flex;
+}
+.classify-img {
+	width: 40rpx;
+	height: 40rpx;
+}
+
+.classify_text {
+	font-size: 14px;
+}
+
+.classify {
+	display: flex;
+	justify-content: space-around;
+}
+
+.classify_price{
+	width:220rpx;
+	background-color: white;
+	position: absolute;
+	top: 40rpx;
+	text-align: center;
+	font-size:14px;
+}
+.price{
+	margin:15rpx;
+	display: flex;
+}
+.vehcle{
+	width:50rpx;
+	height:50rpx;
+}
+.classify-clincd{
+   width:370rpx;
+   height:400rpx;
+   position: absolute;
+   top:50rpx;
+   background-color:white;
+   overflow: auto;
+}
+.brand {
+	display: flex;
+	padding: 10rpx;
+}
+
+.brand_img {
+	width: 50rpx;
+	height: 50rpx;
+}

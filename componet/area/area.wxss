@@ -1,0 +1,33 @@
+.search{
+	display: flex;
+	width:700rpx;
+	margin:0 auto;
+}
+
+.search-img{
+	width:50rpx;
+	height:50rpx;
+}
+.search-text{
+	margin-left:20rpx;
+	font-size:14px;
+}
+.search-input{
+	margin-left:50rpx;
+}
+.inputs{
+	width:400rpx;
+	height:50rpx;
+	border:1px solid black;
+	border-radius:25rpx;
+	position: relative;
+	padding-left:70rpx;
+	font-size:13px;
+}
+.input-img{
+	position: absolute;
+	width:50rpx;
+	height:50rpx;
+	top:1rpx;
+    margin-left:10rpx;
+}

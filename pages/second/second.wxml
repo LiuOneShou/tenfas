@@ -1,2 +1,50 @@
-<!--pages/second/second.wxml-->
-<text>pages/second/second.wxml</text>
+<view>
+	<area></area>
+	<view class="classify">
+		<view class="classify-box">
+			<view class="classify_text">排序</view>
+			<image src="../../img/下-三角.png" class="classify-img"></image>
+		</view>
+		<view class="classify-box">
+			<view class="classify_text" bindtap="dian">品牌</view>
+			<image src="../../img/下-三角.png" class="classify-img"></image>
+			<view class="classify-clincd" wx:if="{{flag}}">
+				<view class="brand" wx:for="{{brandlist}}" wx:key="index" data-id="{{item.id}}" bindtap="branddian">
+					<view class="brand_c" wx:if="{{flagg}}">
+						<image src="{{item.imageUrl}}" class="brand_img"></image>
+						<view class="brand_text">{{item.brand}}</view>
+					</view>
+				</view>
+				<view class="clincd_er" wx:if="{{flaggg}}">
+						<block wx:for="{{brandclicnd}}" wx:key="index">
+							<view class="clincd_txt" bindtap="transfer" data-id="{{item.id}}">{{item.series}}</view>
+						</block>
+				</view>
+			</view>
+		</view>
+		<view class="classify-box">
+			<view class="classify_text" bindtap="pricedian">价格</view>
+			<image src="../../img/下-三角.png" class="classify-img"></image>
+			<view class="classify_price" wx:if="{{pticeflag}}">
+				<view class="price" wx:for="{{price}}" wx:key="index">
+					<view class="price_text" bindtap="ptices">{{item.label}}</view>
+				</view>
+			</view>
+		</view>
+		<view class="classify-box">
+			<view class="classify_text" bindtap="vehcledian">车型</view>
+			<image src="../../img/下-三角.png" class="classify-img"></image>
+			<view class="classify_price" wx:if="{{vehicleflag}}">
+				<view class="price" wx:for="{{vehiclelist}}" wx:key="index" bindtap="vehcledians" data-id="{{item.id}}">
+					<image class="vehcle" src="{{item.logo}}"></image>
+					<view class="price_text">{{item.model}}</view>
+				</view>
+			</view>
+		</view>
+		<view class="classify-box">
+			<view class="classify_text">更多</view>
+			<image src="../../img/下-三角.png" class="classify-img"></image>
+		</view>
+	</view>
+	<list content="{{content}}"></list>
+</view>

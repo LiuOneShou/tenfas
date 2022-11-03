@@ -1,0 +1,21 @@
+<view class="w">
+	<view class="citybox">
+		<view class="city">定位城市</view>
+		<view class="search">
+			<image src="../../img/地图-地标.png" class="search-img"></image>
+			<view class="search-text" bindtap="tiao">全国</view>
+		</view>
+	</view>
+	<view>
+		<block wx:for="{{city}}" wx:key="index">
+			<view class="abc" wx:if="{{item.initials==item.initials}}">{{item.initials}}</view>
+			<view class="citys" bindtap="dian">{{item.name}}
+				<view class="cityss" wx:if="{{citytwo==true}}">
+					<view class="citys-tow" wx:for="{{item.children}}" wx:for-item="i" wx:key="index">
+						<view>{{i.name}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

@@ -1,0 +1,8 @@
+<view class="search">
+	<image src="../../img/地图-地标.png" class="search-img"></image>
+	<view class="search-text" bindtap="tiao">全国</view>
+	<view class="search-input">
+	<input type="text" class="inputs" placeholder="搜索品牌、车型" bindinput="bindKeyInput" bindconfirm="seachs"/>
+	<image class="input-img" src="../../img/搜索框 (1).png" bindtap="seachs"></image>
+	</view>
+</view>

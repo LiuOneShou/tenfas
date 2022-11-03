@@ -1,3 +1,6 @@
 {
-    "usingComponents": {}
+    "usingComponents": {
+        "area":"../../componet/area/area",
+        "list":"../../componet/List/List"
+    }
 }
