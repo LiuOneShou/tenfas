@@ -9,7 +9,7 @@
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
+        "navigationBarTitleText": "腾发二手车",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
@@ -38,6 +38,7 @@
         "color": "#333",
         "selectedColor": "#01cd74"
     },
+
     "style": "v2",
     "sitemapLocation": "sitemap.json"
 }

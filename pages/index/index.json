@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "List": "../../componet/List/List"
+    "List": "../../componet/List/List",
+    "ec-canvas": "../../ec-canvas/ec-canvas"
   }
 }

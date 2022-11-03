@@ -1,3 +1,18 @@
+.map {
+	width: 100%;
+	height: 500rpx;
+}
+
+.echarts {
+	width: 100%;
+	height: 500rpx;
+}
+
+ec-canvas {
+	width: 100%;
+	height: 100%;
+}
+
 .box {
 	width: 90%;
 	margin: 0 auto;
