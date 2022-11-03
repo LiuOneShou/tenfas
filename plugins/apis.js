@@ -23,6 +23,7 @@ export function getParticulars(obj) {
 		...obj
 	})
 }
+
 //获取地区
 export function area(obj) {
 	return axios({
@@ -75,5 +76,13 @@ export function vehicle(obj) {
 		data:{
 			...obj
 		}
+	})
+}
+// 卖车
+export function getsell(obj) {
+	return axios({
+		url: baseUrl + "/estimate",
+		method: "POST",
+		...obj
 	})
 }

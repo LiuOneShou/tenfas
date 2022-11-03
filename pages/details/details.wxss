@@ -1,10 +1,169 @@
 /* pages/details/details.wxss */
-.swiperitem{
+.swiper {
 	width: 100%;
-	height: 300rpx;
+	height: 480rpx;
 }
-.carouselimg{
-	width: 100%;
-	height: 300rpx;
 
+.carouselimg {
+	width: 100%;
+}
+
+.price_line1 {
+	width: 100%;
+	height: 100rpx;
+	background-image: url(https://api.tf2sc.cn/img/jiagetiao1.png);
+	background-size: 23.4375rem 3.375rem;
+	padding: 20rpx 40rpx 0 30rpx;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.price_line_top {
+	display: flex;
+	align-items: flex-end;
+	font-weight: 600;
+}
+
+.price_line_top text {
+	font-size: 25rpx;
+	font-weight: 100;
+	margin-left: 10rpx;
+}
+
+.price_line_bottom {
+	display: flex;
+}
+
+.price_small {
+	font-size: 24rpx;
+	color: #CCDAFF;
+	margin-right: 10rpx;
+}
+
+.cross {
+	text-decoration: line-through;
+}
+
+.detail_car_title {
+	width: 90%;
+	padding: 20rpx;
+	margin: 0 auto;
+}
+
+.detail_anjie {
+	display: flex;
+	padding: 20rpx;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 0 auto;
+	height: 80rpx;
+	background: linear-gradient(90deg, #FFF8F3 0%, #FFEDE0 100%);
+	border-radius: 15rpx;
+	margin-bottom: 30rpx;
+	font-size: 28rpx;
+}
+
+.car_title {
+	font-weight: 600;
+	margin: 30rpx 0;
+}
+
+.detail_anjie_title {
+	display: flex;
+	align-items: center;
+}
+
+.detail_anjie_title image {
+	width: 45rpx;
+	height: 45rpx;
+}
+
+.monthlyRepayment text {
+	color: rgb(245, 153, 79);
+}
+
+.detail_service image {
+	width: 100%;
+	height: 250rpx;
+}
+
+.car_base_info {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.detail_model_title {
+	font-size: 38rpx;
+	color: #333;
+	font-weight: 600;
+}
+
+.base_info {
+	font-size: 30rpx;
+}
+
+.base_info_div {
+	display: flex;
+	margin-top: 30rpx;
+}
+
+.base_info_item {
+	display: flex;
+	width: 50%;
+	font-size: 30rpx;
+}
+
+.base_info_item view {
+	color: #999999;
+	width: 140rpx;
+}
+
+.base_info_item text {
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.warn_info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40rpx;
+	width: 90%;
+	margin: 0 auto;
+	height: 200rpx;
+	font-size: 30rpx;
+	color: #333;
+	background-color: #fff;
+	opacity: .9;
+	box-sizing: border-box;
+}
+
+.car_photos {
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-bottom: 30rpx;
+}
+
+.detail_model_titles {
+	font-size: 38rpx;
+	color: #333;
+	font-weight: 600;
+	width: 90%;
+	margin: 0 auto 30rpx;
+}
+
+.photos_detail_item image {
+	width: 100%;
+	height: 500rpx;
+}
+
+.photos_remark {
+	text-align: center;
+	padding: 20rpx 0;
+	font-size: 28rpx;
+	color: #999999;
 }

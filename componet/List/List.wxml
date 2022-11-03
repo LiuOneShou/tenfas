@@ -1,7 +1,7 @@
 <!--componet/List/List.wxml-->
 <view class="contentbox">
 	<view class="content" data-id="{{item.ind}}" bindtap="details" wx:for="{{content}}" wx:key="index">
-		<image src="{{item.cover}}"></image>
+		<image class="contentimg" src="{{item.cover}}"></image>
 		<view class="deploybox">
 			<view class="carname">{{item.carName}}</view>
 			<view class="deploy">

@@ -1,6 +1,123 @@
 <!--pages/details/details.wxml-->
-<swiper class="swiperitem" indicator-dots autoplay circular indicator-active-color="#ffffff">
-	<swiper-item  wx:for="{{particulars.photoVo.carousel}}" wx:key="item">
+<swiper class="swiper" indicator-dots autoplay circular indicator-active-color="#ffffff">
+	<swiper-item wx:for="{{particulars.photoVo.carousel}}" wx:key="item">
 		<image class="carouselimg" src="{{item}}"></image>
 	</swiper-item>
 </swiper>
+<view class="price_line1">
+	<view class="price_line_top">
+		{{particulars.priceVo.caHallPrice}}
+		<text>万</text>
+	</view>
+	<view class="price_line_bottom" wx:if="{{save}}">
+		<view class="price_small">新车完税价：{{particulars.priceVo.carNetPrice}}万</view>
+		<view class="price_small">为您节约 {{save}}万</view>
+	</view>
+	<view class="price_line_bottom" wx:if="{{!save}}">
+		<view class="price_small cross">新车价：0万</view>
+	</view>
+</view>
+<view class="detail_car_title">
+	<view class="car_title">{{particulars.carName}}</view>
+	<view class="detail_anjie">
+		<view class="detail_anjie_title">
+			<image src="https://api.tf2sc.cn/img/anjie.png"></image>
+			<text>灵活按揭</text>
+		</view>
+		<view class="monthlyRepayment">
+			首付
+			<text>30%</text>
+			月供约
+			<text>{{particulars.priceVo.monthlyRepayment}}元</text>
+			(36期)
+		</view>
+	</view>
+	<view class="detail_service">
+		<image src="../../imgs/commitment.png"></image>
+	</view>
+</view>
+<view class="car_base_info">
+	<view class="detail_model_title">
+		基本信息
+	</view>
+	<view class="base_info">
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>上牌时间</view>
+				<text>{{particulars.dateOfRegistration  || '-'}}</text>
+			</view>
+			<view class="base_info_item">
+				<view>公里数</view>
+				<text>{{particulars.mileage  || '-'}}万公里</text>
+			</view>
+		</view>
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>车身颜色</view>
+				<text>{{particulars.parameterVo.carColor  || '-'}}</text>
+			</view>
+			<view class="base_info_item">
+				<view>变速箱</view>
+				<text>{{particulars.parameterVo.gearbox  || '-'}}</text>
+			</view>
+		</view>
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>排量</view>
+				<text>{{particulars.displacement  || '-'}}</text>
+			</view>
+			<view class="base_info_item">
+				<view>排放标准</view>
+				<text>{{particulars.parameterVo.emissionStandard  || '-'}}</text>
+			</view>
+		</view>
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>燃烧方式</view>
+				<text>{{particulars.parameterVo.fuel  || '-'}}</text>
+			</view>
+			<view class="base_info_item">
+				<view>过户次数</view>
+				<text>{{particulars.parameterVo.carTransfer || '-'}}</text>
+			</view>
+		</view>
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>出厂日期</view>
+				<text>{{particulars.parameterVo.deliveryTime  || '-'}}</text>
+			</view>
+			<view class="base_info_item">
+				<view>车架号</view>
+				<text>{{particulars.carId  || '-'}}</text>
+			</view>
+		</view>
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>座位数</view>
+				<text>{{particulars.seat || '-'}}</text>
+			</view>
+			<view class="base_info_item">
+				<view>驱动方式</view>
+				<text>{{particulars.parameterVo.drive || '-'}}</text>
+			</view>
+		</view>
+		<view class="base_info_div">
+			<view class="base_info_item">
+				<view>车辆描述</view>
+				<text>暂无</text>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="warn_info">
+	看车前，请先电话咨询商家预约看车，确认车辆在店后前往看车。交易时，注意查验车辆信息和车况，以车辆相关证件为准。
+</view>
+<view class="car_photos">
+	<view class="detail_model_titles">车辆图片</view>
+	<view class="photos_detail">
+		<view class="photos_detail_item" wx:for="{{particulars.photoVo.detail}}" wx:key="item">
+			<image src="{{item}}"></image>
+		</view>
+	</view>
+	<view class="photos_remark">注：车辆具体配置信息以实车为准</view>
+</view>
